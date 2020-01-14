@@ -31,7 +31,67 @@ chmod 755 genesis_start.sh
 - <EOS_PRIV_DEV_KEY>: set as you test account private key
 - <PRODUCT_NAME>: set as you test account name
 
-now the test node is OK! ！！
+### check node
+```shell
+$ cleos get info
+{
+  "server_version": "e19afc80",
+  "chain_id": "72d597bd2f1560b544f8c58b3fe87ff02ef26c35eec71ddd51da2dd6ab1fa722",
+  "head_block_num": 200246,
+  "last_irreversible_block_num": 199917,
+  "last_irreversible_block_id": "00030cedb82764131725b3d6ca8d23e8f4973f73b67b895683876062587b96f5",
+  "head_block_id": "00030e3699920b0c69c63116599a69c81493f1ac6ad5985e72629d23a7db5634",
+  "head_block_time": "2020-01-13T17:05:32.000",
+  "head_block_producer": "myeidosvoice",
+  "virtual_block_cpu_limit": 100000000,
+  "virtual_block_net_limit": 1048576000,
+  "block_cpu_limit": 100000,
+  "block_net_limit": 1048576,
+  "server_version_string": "v2.0.0",
+  "fork_db_head_block_num": 200246,
+  "fork_db_head_block_id": "00030e3699920b0c69c63116599a69c81493f1ac6ad5985e72629d23a7db5634",
+  "server_full_version_string": "v2.0.0-e19afc8072219282a7c3fc20e47aa80cb70299e4"
+}
+```
+if the chain_id is __72d597bd2f1560b544f8c58b3fe87ff02ef26c35eec71ddd51da2dd6ab1fa722__, now the test node is OK! ！！
+
+wait a moment, after all blocks synchronized, you can check the bp info:
+```
+$ cleos system listproducers
+Producer      Producer key                                              Url                                                         Scaled votes
+huskeynodebp  EOS5zToLAagn4R4DW2KvXe7VRpdbCieEEurkvo6NcBuJL3TNc5tUj     “https://huskeybp.xyz/”                                 0.0333
+mathwalletbp  EOS74VJKdGWvDg2fc4bEBWBrnH92ByJpqpoZbG1KvUbG7eFSCDQS9     https://mathwallet.org                                      0.0333
+dingshenghui  EOS7m67gRazGPa7qgZ2fYYkAdFJUbWDP9N3V1Tpu4iysjqPwnjPN9     https://dshtz.com/                                          0.0333
+myeidosvoice  EOS83jv9D5B4oDc58bqGknfFgz15BfMkihf3gdGTM613xn4spNq9c     https://myeidosvoice.com                                    0.0333
+mykeythebest  EOS8ej6m5xWj9ZUedSqSCxwsehuLvmn1aiuYqhXmXiDDsVfXkHgVY     https://mykey.org                                           0.0333
+yasyas123123  EOS7nm7zccTPXctLSXT7LXjKGET3Aqhoh5fL27MjvKrDjHBydG7HQ     peilin.xyz                                                  0.0333
+eidosgroup2a  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup2b  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup1a  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup1b  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup1c  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup1d  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup1e  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup1f  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup2c  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup2d  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup2e  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup2f  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup3a  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup3b  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup3c  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup3d  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup3e  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup3f  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup4a  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup4b  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup4c  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup4d  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup4e  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+eidosgroup4f  EOS8E3r3McwpKQpoT9zMMZisZdqTfR14aunPeUbpRFWqECX5QCeGT                                                                 0.0333
+zhaoyilun532  EOS6jbnzJhWfHWCEUWykioLJFs6L97fgJZesyLaxVFiVnx8DWBGEV                                                                 0.0000
+tothemoonkey  EOS5Me73aRQbEdG1UgGkjrYsif3Fb9kA7w8Kc8GprSSqz4qiFbe2a                                                                 0.0000
+```
 
 but after stopping the nodeos process, you can't use ./genesis_start.sh script to start, you should use:
 ```shell
