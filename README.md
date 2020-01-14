@@ -19,7 +19,7 @@ sudo apt install ./eosio_2.0.0-1-ubuntu-18.04_amd64.deb
 
 ## Init testnet
 ### init genesis node
-You can get the yas testnet account from ap in telegram (https://t.me/eidosgroup "eidosgroup"), then excute:
+You can get the yas testnet account from ap in telegram [eidosgroup](https://t.me/eidosgroup), then excute:
 ```shell
 git clone https://github.com/hqzhong/yas_testnet.git
 cd biosboot/genesis
@@ -141,7 +141,7 @@ sudo apt install ./eosio_2.0.0-1-ubuntu-18.04_amd64.deb
 
 ## 初始化测试节点
 ### 初始化测试节点
-你可以通过电报群(https://t.me/eidosgroup "eidosgroup")向ap申请yas测试网账户,然后执行以下命令:
+你可以通过电报群[eidosgroup](https://t.me/eidosgroup)向ap申请yas测试网账户,然后执行以下命令:
 ```shell
 git clone https://github.com/hqzhong/yas_testnet.git
 cd biosboot/genesis
