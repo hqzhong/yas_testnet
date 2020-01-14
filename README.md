@@ -111,7 +111,7 @@ Without password imported keys will not be retrievable.
 ```
 
 ```shell
-cleos wallet import <EOS_PRIV_DEV_KEY>
+cleos wallet import <EOS_PUB_DEV_KEY>
 ```
 
 ```shell
@@ -233,7 +233,7 @@ Without password imported keys will not be retrievable.
 ```
 
 ```shell
-cleos wallet import <EOS_PRIV_DEV_KEY>
+cleos wallet import <EOS_PUB_DEV_KEY>
 ```
 
 ```shell
