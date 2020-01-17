@@ -124,9 +124,9 @@ chmod 755 genesis_start.sh
 ./genesis_start.sh <EOS_PUB_DEV_KEY> <EOS_PRIV_DEV_KEY> <PRODUCT_NAME>
 ```
 
-- <EOS_PUB_DEV_KEY>: set as you test account public key
-- <EOS_PRIV_DEV_KEY>: set as you test account private key
-- <PRODUCT_NAME>: set as you test account name
+- <EOS_PUB_DEV_KEY>: 公钥
+- <EOS_PRIV_DEV_KEY>: 私钥
+- <PRODUCT_NAME>: 账户名
 
 ### 检查节点信息
 ```shell
