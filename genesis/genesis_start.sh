@@ -30,6 +30,7 @@ nodeos \
 --http-validate-host=false \
 --verbose-http-errors \
 --enable-stale-production \
+--wasm-runtime eos-vm-jit \
 --p2p-peer-address 172.105.148.49:9876 \
 --p2p-peer-address 45.33.7.189:9876 \
 --p2p-peer-address 172.105.171.34:9876 \
