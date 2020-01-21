@@ -1,4 +1,4 @@
-# Install YAS testnet
+# Install YAS testnet (or main)
 
 ## Install eos and eosio.cdt
 ### Mac OS X
