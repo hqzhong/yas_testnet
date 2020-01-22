@@ -17,7 +17,7 @@
     "deferred_trx_expiration_window": 600,
     "max_transaction_delay": 3888000,
     "max_inline_action_size": 4096,
-    "max_inline_action_depth": 4,
+    "max_inline_action_depth": 6,
     "max_authority_depth": 6
   },
   "initial_chain_id": "0000000000000000000000000000000000000000000000000000000000000000"
