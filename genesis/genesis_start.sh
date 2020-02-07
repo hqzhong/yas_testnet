@@ -31,10 +31,10 @@ nodeos \
 --verbose-http-errors \
 --enable-stale-production \
 --wasm-runtime eos-vm-jit \
---p2p-peer-address 172.105.148.49:9876 \
---p2p-peer-address 45.33.7.189:9876 \
---p2p-peer-address 172.105.171.34:9876 \
---p2p-peer-address 172.104.78.234:9876 \
---p2p-peer-address 172.105.25.216:9876 \
+--p2p-peer-address 198.74.53.102:9876 \
+--p2p-peer-address 172.105.84.51:9876 \
+--p2p-peer-address 85.159.211.82:9876 \
+--p2p-peer-address 172.104.66.128:9876 \
+--p2p-peer-address 172.105.19.253:9876 \
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
